@@ -1,0 +1,236 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #a5bdfd;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    background-color: #2C3E50;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ECF0F1;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #1ABC9C;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    font-size: 1rem;
+    color: #ECF0F1;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1ABC9C;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?education,school') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    background-color: #1ABC9C;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #16A085;
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 0;
+    background-color: #ECF0F1;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    width: 70%;
+    margin: 0 auto;
+    color: #7F8C8D;
+}
+
+.about-details {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.about-details div {
+    background-color: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-details div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-details h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #34495E;
+}
+
+/* Courses Section */
+.courses-section {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.courses-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2C3E50;
+}
+
+.courses-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.course {
+    background-color: #a5bdfd;
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.course h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #34495E;
+}
+
+.course p {
+    font-size: 1.1rem;
+    color: #7F8C8D;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+    background-color: #ECF0F1;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.contact-info li {
+    font-size: 1.2rem;
+    color: #7F8C8D;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
